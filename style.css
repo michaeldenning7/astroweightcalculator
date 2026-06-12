@@ -1,0 +1,144 @@
+/* ==========================================
+   COSMIC GLOBAL STYLES 
+   ========================================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: radial-gradient(circle at center, #1b1236 0%, #080511 100%);
+    color: #e0dcf0;
+    font-family: 'Rajdhani', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+/* Futuristic Header styling */
+h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #00ffff;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.6), 0 0 20px rgba(0, 255, 255, 0.3);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+/* ==========================================
+   MAIN CALCULATOR CONTAINER
+   ========================================== */
+
+main, .container {
+    background: rgba(15, 10, 32, 0.75);
+    border: 1px solid rgba(0, 255, 255, 0.2);
+    box-shadow: 0 0 30px rgba(138, 43, 226, 0.25), inset 0 0 15px rgba(0, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 16px;
+    padding: 2.5rem;
+    width: 90%;
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Labels */
+label {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    color: #bfa3ff;
+    text-transform: uppercase;
+}
+
+/* ==========================================
+   FORM CONTROLS (INPUT & SELECT)
+   ========================================== */
+
+input[type="number"], select {
+    width: 100%;
+    background: rgba(5, 3, 13, 0.8);
+    border: 1px solid #4a2f8a;
+    border-radius: 8px;
+    padding: 0.8rem 1rem;
+    color: #ffffff;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    outline: none;
+    transition: all 0.3s ease;
+    margin-top: 0.5rem;
+}
+
+/* Neon glow when clicking into inputs */
+input[type="number"]:focus, select:focus {
+    border-color: #00ffff;
+    box-shadow: 0 0 12px rgba(0, 255, 255, 0.4);
+}
+
+/* Style options inside dropdown */
+select option {
+    background: #0d0921;
+    color: #ffffff;
+}
+
+/* ==========================================
+   GLOWING ACTION BUTTON
+   ========================================== */
+
+#calculate-button {
+    width: 100%;
+    background: linear-gradient(135deg, #8a2be2 0%, #4a00e0 100%);
+    border: none;
+    border-radius: 8px;
+    padding: 1rem;
+    color: #ffffff;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(138, 43, 226, 0.4);
+    transition: all 0.3s ease;
+    margin-top: 0.5rem;
+}
+
+#calculate-button:hover {
+    background: linear-gradient(135deg, #9d4edd 0%, #5910fa 100%);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.6);
+    transform: translateY(-2px);
+}
+
+#calculate-button:active {
+    transform: translateY(1px);
+}
+
+/* ==========================================
+   OUTPUT DISPLAY AREA
+   ========================================== */
+
+#output {
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #ff007f;
+    text-shadow: 0 0 10px rgba(255, 0, 127, 0.4);
+    font-family: 'Rajdhani', sans-serif;
+    margin-top: 0.5rem;
+    transition: all 0.3s ease;
+}
